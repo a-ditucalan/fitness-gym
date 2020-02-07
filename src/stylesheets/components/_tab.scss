@@ -12,12 +12,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
   margin: 0 1px;
   width: 210px;
   height: 40px;
 
   color: #fff;
+
+  border: none;
 
   cursor: pointer;
 
@@ -50,6 +51,6 @@
 
 @include respond-to(xs) {
   .tab-holder {
-    font-size: 9px;
+    font-size: 7px;
   }
 }
