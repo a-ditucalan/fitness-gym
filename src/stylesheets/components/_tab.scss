@@ -1,0 +1,55 @@
+.tab-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  
+  .active-tab {
+    background: #00867d;
+  }
+}
+
+.tab-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  margin: 0 1px;
+  width: 210px;
+  height: 40px;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  background: #1c1c1c;
+}
+
+.img-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@include respond-to(md) {
+  .tab-holder {
+    width: 150px;
+
+    font-size: 16px;
+  }
+}
+
+@include respond-to(sm-down) {
+  .tab-holder {
+    width: 150px;
+
+    font-size: 12px;
+  }
+}
+
+@include respond-to(xs) {
+  .tab-holder {
+    font-size: 9px;
+  }
+}

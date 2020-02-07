@@ -1,0 +1,38 @@
+.banner {
+  margin-bottom: 20px;
+
+  &-text {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &-heading {
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &-heading-highlight {
+    @extend .banner-heading;
+    color: #00867d;
+ 
+  }
+}
+
+@include respond-to(md) {
+  .banner {
+    margin-left: 48px;
+    .banner-heading {
+      font-size: 30px;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .banner {
+  
+    .banner-heading {
+      font-size: 25px;
+    }
+  }
+}
