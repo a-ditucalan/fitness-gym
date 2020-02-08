@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react"
 
 const ImageItem = ({ img, altText }) => {
   return (
-    <img src={img} alt={altText} />
+    <div className="img-box">
+      <img src={img} alt={altText} />
+    </div>
   )
 }
 
