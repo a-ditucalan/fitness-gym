@@ -1,19 +1,15 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import ImageItem from './ImageItem'
 
-const ImageGrid = ({ ImageData, activeTab }) => {
+const ImageGrid = ({ items }) => {
   return (
-    <Fragment>
-      {ImageData.title === activeTab ? (
-        <div className="img-holder">
-          {ImageData.item.map((itemSrc, key) => {
-            return (
-              <ImageItem key={key} img={itemSrc.img} altText={itemSrc.altText} />
-            )
-          })}
-        </div>
-      ) : null}
-    </Fragment>
+    <div className="img-holder">
+      {items.map((itemSrc, key) => {
+        return (
+          <ImageItem key={key} img={itemSrc.img} altText={itemSrc.altText} />
+        )
+      })}
+    </div>
   )
 }
 
